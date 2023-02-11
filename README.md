@@ -18,3 +18,12 @@ First I splitted the data for training as well as testing so that I can avoid th
 #### Data Balancing 
 As I had seen that data was imbalance. So, I used SMOTE to balance the data so that I can avoid duplicacy.
 ## Model Selection and Training
+First I trained NaiveBias model and evaluated it. But, this model was not so precise. So, I tried with XGBoost model and get good accuracies on training and testing data. So, I decided to go with XGBoost model for further use. Then I tunned the model and got good traidoff between training and testing accuracies also good value of precision, recall and f1score for both classes. Finally the accuracy of the model was **86.5%** and f1 score was **88%**. 
+## Model Testing
+Next, I Tested the model whether it was working with the positive as well as negative user review. I observed that my model was predicting accurate sentiment for given reviews. 
+## Model Exportation for Production
+Lastly, I exported both of the models tunned XGBoost model and Countvectorizer model. 
+## Future Work
+The model has been trained only on 10000 documents.So, we can retrain this model with more data in order to get more accuracy. 
+
+# Thank You
